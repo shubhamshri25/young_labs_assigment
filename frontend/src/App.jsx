@@ -20,7 +20,7 @@ function App() {
 
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_API_BASE_URL}/greet?name=${name}`
+        `${import.meta.env.VITE_API_BASE_URL}/api/greet?name=${name}`
       );
     
       setMessage(response.data.message);
